@@ -1169,12 +1169,12 @@ ul {
     
       /* Improved hero section */
       .hero {
-        margin-top: 40px;
         height: 80vh;
         min-height: 500px;
     }
     .hero-content {
         padding: 0 15px;
+        padding-top: 70px;
     }
     .hero-cta {
         flex-direction: column;
