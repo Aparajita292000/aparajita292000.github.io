@@ -1169,6 +1169,7 @@ ul {
     
       /* Improved hero section */
       .hero {
+        margin-top: 40px;
         height: 80vh;
         min-height: 500px;
     }
