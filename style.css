@@ -11,6 +11,7 @@
     --transition: all 0.3s ease;
     --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     --section-padding: 80px 0;
+    --transition: all 0.3s ease;
 }
 
 * {
@@ -195,7 +196,7 @@ ul {
 }
 
 .logo img {
-    height: 40px;
+    height: 25px;
 }
 
 .nav-menu {
@@ -602,9 +603,57 @@ ul {
     color: #555;
   }
   
+/* FAQ Section */
 
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background-color: white;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid wheat;
+}
+
+.faq-question p {
+    margin-bottom: 0;
+    font-size: 1.05rem;
+}
+
+.faq-question i {
+
+    transition: var(--transition);
+}
+
+.faq-answer {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.faq-item.active .faq-answer {
+    padding: 20px 20px;
+    max-height: 1000px;
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(45deg);
+}
   
-
 /* About Lodha Section */
 .lodha-logo {
     display: block;
@@ -736,7 +785,7 @@ ul {
 }
 
 .footer-logo img {
-    height: 40px;
+    height: 30px;
 }
 
 .footer-links ul {
@@ -1055,6 +1104,8 @@ ul {
 .contact-info-item a:hover {
     color: #d4b78f;
 }
+
+
 
 /* Responsive Styles */
 @media (max-width: 992px) {

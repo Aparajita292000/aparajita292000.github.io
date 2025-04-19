@@ -123,6 +123,26 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // FAQ accordion functionality
+    const faqItems = document.querySelectorAll('.faq-item');
+    
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        
+        question.addEventListener('click', () => {
+            const isOpen = item.classList.contains('active');
+            
+            // Close all items first
+            faqItems.forEach(faqItem => {
+                faqItem.classList.remove('active');
+            });
+            // If the clicked item was not open, open it
+            if (!isOpen) {
+                item.classList.add('active');
+            }
+        });
+    });
+
     // Popup functionality improvement
     const popupBtns = document.querySelectorAll('.open-popup');
     const popupOverlay = document.querySelector('.popup-overlay');
