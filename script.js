@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
         
-        question.addEventListener('click', () => {
+        question.addEventListener('pointerdown', () => {
             const isOpen = item.classList.contains('active');
             
             // Close all items first
